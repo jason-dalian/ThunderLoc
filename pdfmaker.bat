@@ -4,3 +4,4 @@ pdflatex Main.tex
 pdflatex Main.tex
 del *.bak
 Acrobat Main.pdf
+

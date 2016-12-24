@@ -104,8 +104,12 @@ direction and binary measurement data by the way of `humans as sensor'~\cite{wan
   \vspace{-1mm}
 \subsection{Basic Localization on Server Side}
   \vspace{-0mm}
-  
-    \begin{figure}[ht]
+    
+In this section, we introduce the basic localization method in ThunderLoc system. 
+Let us consider the 4G network with $N$ dual-microphone smartphones randomly deployed in 2D area. 
+The position and orientation of a smartphone are assumed to be known, which can be estimated by its GPS(or Wi-Fi based indoor localization) and motion sensors, respectively.
+Fig. \ref{Server} depicts the flow of the ThunderLoc server application. In the cloud computing platform, the map of space division can be built with the position and orientation information of all smartphone nodes.
+    \begin{figure}[h]
             \setlength{\abovecaptionskip}{0pt}
             \centering
             \includegraphics[scale=1.4,height=4.0cm]{fig/server.pdf}
@@ -114,13 +118,7 @@ direction and binary measurement data by the way of `humans as sensor'~\cite{wan
             \label{Server}
             \vspace{-4mm}
   \end{figure}
-
   
-In this section, we introduce the basic localization method in ThunderLoc system. 
-Let us consider the 4G network with $N$ dual-microphone smartphones randomly deployed in 2D area. 
-The position and orientation of a smartphone are assumed to be known, which can be estimated by its GPS(or Wi-Fi based indoor localization) and motion sensors, respectively.
-Fig. \ref{Server} depicts the flow of the ThunderLoc server application. In the cloud computing platform, the map of space division can be built with the position and orientation information of all smartphone nodes.
-
 The top-level idea for basic ThunderLoc is to split the whole localization area into some subregions identified by respective binary sequences.
 Then, we can turn the acoustic source localization into the searching problem in the Hamming space. 
 Given $N$ smartphone nodes in the localization space, the whole number of combinations of binary sequences is $2^N$ in theory.
@@ -262,8 +260,8 @@ In step 3, the time complexity of the search processing is  $O \left( {PN} \righ
 	\vspace{-4mm}
   
 The bit-flip problem for measurement data and the location and direction parameter errors have impact on the localization performance as shown in Fig. \ref{Impact}.
-As shown in Fig. \ref{Impact}$(a)$, In case the measurement binary data from node B is flipped, the binary sequence $'10'$ is turned into $'11'$, reducing the accuracy of localization system. 
-In Fig. \ref{Impact}$(b)$, if the position measurement or angle measurement of sensor B is inaccurate, 
+As shown in Fig. \ref{Impact}$(a)$, when the measurement binary data from node B is flipped, the binary sequence $'10'$ is turned into $'11'$, reducing the accuracy of localization system. 
+In Fig. \ref{Impact}$(b)$, if the position or orientation of sensor B exists some measurement error, 
 there is a certain distance between actual position and estimated position.
 According to the above, the basic Thunderloc is not suitable for the practical application. In the next section, 
 we propose a robust localization solution against the measurement errors, position errors and orientation errors of smartphones.

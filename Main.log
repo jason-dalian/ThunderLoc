@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.13)  24 DEC 2016 19:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.13)  24 DEC 2016 19:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -475,18 +475,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]) (./Overview.tex
-<fig/overview.pdf, id=10, 514.32152pt x 303.534pt>
+<fig/overview.pdf, id=10, 541.42278pt x 321.6015pt>
 File: fig/overview.pdf Graphic file (type pdf)
  <use fig/overview.pdf>
 Package pdftex.def Info: fig/overview.pdf used on input line 16.
-(pdftex.def)             Requested size: 1028.64053pt x 607.0665pt.
+(pdftex.def)             Requested size: 1082.8429pt x 643.20142pt.
 
-<fig/architecture.pdf, id=11, 1139.45695pt x 728.12027pt>
+<fig/architecture.pdf, id=11, 1182.2168pt x 682.34924pt>
 File: fig/architecture.pdf Graphic file (type pdf)
 
 <use fig/architecture.pdf>
 Package pdftex.def Info: fig/architecture.pdf used on input line 45.
-(pdftex.def)             Requested size: 2278.90839pt x 1456.23697pt.
+(pdftex.def)             Requested size: 2364.42783pt x 1364.69516pt.
 ) (./Design.tex
 Underfull \vbox (badness 5374) has occurred while \output is active []
 
@@ -494,13 +494,13 @@ Underfull \vbox (badness 5374) has occurred while \output is active []
 
 pdfTeX warning: pdflatex.exe (file ./fig/architecture.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
->] <fig/ThunderLoc.pdf, id=79, 1988.02722pt x 1193.05722pt>
+>] <fig/ThunderLoc.pdf, id=78, 1988.02722pt x 1193.05722pt>
 File: fig/ThunderLoc.pdf Graphic file (type pdf)
 
 <use fig/ThunderLoc.pdf>
 Package pdftex.def Info: fig/ThunderLoc.pdf used on input line 22.
 (pdftex.def)             Requested size: 2783.21922pt x 1670.26874pt.
- <fig/dualmic.pdf, id=80, 980.46298pt x 414.34799pt>
+ <fig/dualmic.pdf, id=79, 980.46298pt x 414.34799pt>
 File: fig/dualmic.pdf Graphic file (type pdf)
 
 <use fig/dualmic.pdf>
@@ -511,24 +511,27 @@ Overfull \hbox (3.01646pt too wide) in paragraph at lines 33--35
  [][] 
  []
 
-<fig/client.pdf, id=81, 736.55174pt x 514.32152pt>
+<fig/client.pdf, id=80, 946.73701pt x 514.32152pt>
 File: fig/client.pdf Graphic file (type pdf)
  <use fig/client.pdf>
 Package pdftex.def Info: fig/client.pdf used on input line 45.
-(pdftex.def)             Requested size: 1473.09988pt x 1028.64053pt.
+(pdftex.def)             Requested size: 1893.46942pt x 1028.64053pt.
 
-<fig/modechange.pdf, id=82, 925.65826pt x 599.84097pt>
+<fig/modechange.pdf, id=81, 925.65826pt x 599.84097pt>
 File: fig/modechange.pdf Graphic file (type pdf)
 
 <use fig/modechange.pdf>
 Package pdftex.def Info: fig/modechange.pdf used on input line 69.
 (pdftex.def)             Requested size: 1295.91275pt x 839.77162pt.
- <fig/server.pdf, id=83, 1103.32195pt x 554.67223pt>
+ <fig/server.pdf, id=82, 1149.09305pt x 554.67223pt>
 File: fig/server.pdf Graphic file (type pdf)
 
 <use fig/server.pdf>
-Package pdftex.def Info: fig/server.pdf used on input line 111.
-(pdftex.def)             Requested size: 1544.64023pt x 776.53583pt.
+Package pdftex.def Info: fig/server.pdf used on input line 115.
+(pdftex.def)             Requested size: 1608.71933pt x 776.53583pt.
+
+Underfull \vbox (badness 2818) has occurred while \output is active []
+
  [3 <./fig/ThunderLoc.pdf> <./fig/dualmic.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/dualmic.pdf): PDF inclusion: multiple 
@@ -551,14 +554,14 @@ df>
 (epstopdf)                    size: 117916 bytes
 (epstopdf)             Command: <repstopdf --outfile=image/Hamming_distance2-ep
 s-converted-to.pdf image/Hamming_distance2.eps>
-(epstopdf)             \includegraphics on input line 144.
+(epstopdf)             \includegraphics on input line 142.
 Package epstopdf Info: Output file is already uptodate.
 
-<image/Hamming_distance2-eps-converted-to.pdf, id=135, 574.145pt x 296.10625pt>
+<image/Hamming_distance2-eps-converted-to.pdf, id=134, 574.145pt x 296.10625pt>
 File: image/Hamming_distance2-eps-converted-to.pdf Graphic file (type pdf)
 <use image/Hamming_distance2-eps-converted-to.pdf>
 Package pdftex.def Info: image/Hamming_distance2-eps-converted-to.pdf used on i
-nput line 144.
+nput line 142.
 (pdftex.def)             Requested size: 803.79753pt x 414.5459pt.
 Package epstopdf Info: Source file: <fig/Hamming1.eps>
 (epstopdf)                    date: 2016-12-23 14:04:07
@@ -568,18 +571,18 @@ Package epstopdf Info: Source file: <fig/Hamming1.eps>
 (epstopdf)                    size: 11570 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/Hamming1-eps-converted
 -to.pdf fig/Hamming1.eps>
-(epstopdf)             \includegraphics on input line 162.
+(epstopdf)             \includegraphics on input line 160.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Hamming1-eps-converted-to.pdf, id=136, 903.375pt x 591.20876pt>
+<fig/Hamming1-eps-converted-to.pdf, id=135, 903.375pt x 591.20876pt>
 File: fig/Hamming1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/Hamming1-eps-converted-to.pdf>
 Package pdftex.def Info: fig/Hamming1-eps-converted-to.pdf used on input line 1
-62.
+60.
 (pdftex.def)             Requested size: 123.90775pt x 81.09052pt.
 
-Overfull \hbox (10.03609pt too wide) in paragraph at lines 162--166
+Overfull \hbox (10.03609pt too wide) in paragraph at lines 160--164
  [][] 
  []
 
@@ -591,17 +594,17 @@ Package epstopdf Info: Source file: <fig/Hamming2.eps>
 (epstopdf)                    size: 76032 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/Hamming2-eps-converted
 -to.pdf fig/Hamming2.eps>
-(epstopdf)             \includegraphics on input line 170.
+(epstopdf)             \includegraphics on input line 168.
 Package epstopdf Info: Output file is already uptodate.
-<fig/Hamming2-eps-converted-to.pdf, id=137, 903.375pt x 591.20876pt>
+<fig/Hamming2-eps-converted-to.pdf, id=136, 903.375pt x 591.20876pt>
 File: fig/Hamming2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/Hamming2-eps-converted-to.pdf>
 Package pdftex.def Info: fig/Hamming2-eps-converted-to.pdf used on input line 1
-70.
+68.
 (pdftex.def)             Requested size: 123.90775pt x 81.09052pt.
 
-Overfull \hbox (10.03609pt too wide) in paragraph at lines 170--174
+Overfull \hbox (10.03609pt too wide) in paragraph at lines 168--172
  [][] 
  []
 
@@ -615,14 +618,14 @@ Package epstopdf Info: Source file: <image/node.eps>
 (epstopdf)                    size: 18460 bytes
 (epstopdf)             Command: <repstopdf --outfile=image/node-eps-converted-t
 o.pdf image/node.eps>
-(epstopdf)             \includegraphics on input line 241.
+(epstopdf)             \includegraphics on input line 239.
 Package epstopdf Info: Output file is already uptodate.
 
-<image/node-eps-converted-to.pdf, id=191, 348.30125pt x 247.92625pt>
+<image/node-eps-converted-to.pdf, id=188, 348.30125pt x 247.92625pt>
 File: image/node-eps-converted-to.pdf Graphic file (type pdf)
 
 <use image/node-eps-converted-to.pdf>
-Package pdftex.def Info: image/node-eps-converted-to.pdf used on input line 241
+Package pdftex.def Info: image/node-eps-converted-to.pdf used on input line 239
 .
 (pdftex.def)             Requested size: 111.92105pt x 79.6678pt.
 Package epstopdf Info: Source file: <image/angleposition.eps>
@@ -633,18 +636,18 @@ Package epstopdf Info: Source file: <image/angleposition.eps>
 (epstopdf)                    size: 38878 bytes
 (epstopdf)             Command: <repstopdf --outfile=image/angleposition-eps-co
 nverted-to.pdf image/angleposition.eps>
-(epstopdf)             \includegraphics on input line 251.
+(epstopdf)             \includegraphics on input line 249.
 Package epstopdf Info: Output file is already uptodate.
 
-<image/angleposition-eps-converted-to.pdf, id=192, 272.01625pt x 188.705pt>
+<image/angleposition-eps-converted-to.pdf, id=189, 272.01625pt x 188.705pt>
 File: image/angleposition-eps-converted-to.pdf Graphic file (type pdf)
 
 <use image/angleposition-eps-converted-to.pdf>
 Package pdftex.def Info: image/angleposition-eps-converted-to.pdf used on input
- line 251.
+ line 249.
 (pdftex.def)             Requested size: 114.83958pt x 79.6678pt.
 
-Overfull \hbox (0.96793pt too wide) in paragraph at lines 251--256
+Overfull \hbox (0.96793pt too wide) in paragraph at lines 249--254
  [][] 
  []
 
@@ -653,7 +656,7 @@ pdf>]) (./Discussion.tex
 Missing character: There is no Ô in font ptmr7t!
 Missing character: There is no ¨ in font ptmr7t!
 Missing character: There is no Å in font ptmr7t!
- <fig/msl.pdf, id=236, 467.34601pt x 221.02574pt>
+ <fig/msl.pdf, id=233, 467.34601pt x 221.02574pt>
 File: fig/msl.pdf Graphic file (type pdf)
 
 <use fig/msl.pdf>
@@ -671,7 +674,7 @@ erted-to.pdf image/Node_Number.eps>
 (epstopdf)             \includegraphics on input line 45.
 Package epstopdf Info: Output file is already uptodate.
 
-<image/Node_Number-eps-converted-to.pdf, id=250, 1204.5pt x 670.505pt>
+<image/Node_Number-eps-converted-to.pdf, id=247, 1204.5pt x 670.505pt>
 File: image/Node_Number-eps-converted-to.pdf Graphic file (type pdf)
 
 <use image/Node_Number-eps-converted-to.pdf>
@@ -689,7 +692,7 @@ erted-to.pdf image/Faulty_Node.eps>
 (epstopdf)             \includegraphics on input line 55.
 Package epstopdf Info: Output file is already uptodate.
 
-<image/Faulty_Node-eps-converted-to.pdf, id=251, 1204.5pt x 670.505pt>
+<image/Faulty_Node-eps-converted-to.pdf, id=248, 1204.5pt x 670.505pt>
 File: image/Faulty_Node-eps-converted-to.pdf Graphic file (type pdf)
 
 <use image/Faulty_Node-eps-converted-to.pdf>
@@ -707,7 +710,7 @@ ed-to.pdf image/Location.eps>
 (epstopdf)             \includegraphics on input line 65.
 Package epstopdf Info: Output file is already uptodate.
 
-<image/Location-eps-converted-to.pdf, id=252, 1204.5pt x 670.505pt>
+<image/Location-eps-converted-to.pdf, id=249, 1204.5pt x 670.505pt>
 File: image/Location-eps-converted-to.pdf Graphic file (type pdf)
 
 <use image/Location-eps-converted-to.pdf>
@@ -725,7 +728,7 @@ ted-to.pdf image/Direction.eps>
 (epstopdf)             \includegraphics on input line 82.
 Package epstopdf Info: Output file is already uptodate.
 
-<image/Direction-eps-converted-to.pdf, id=253, 762.85pt x 416.55624pt>
+<image/Direction-eps-converted-to.pdf, id=250, 762.85pt x 416.55624pt>
 File: image/Direction-eps-converted-to.pdf Graphic file (type pdf)
 
 <use image/Direction-eps-converted-to.pdf>
@@ -743,7 +746,7 @@ pdf image/3D.eps>
 (epstopdf)             \includegraphics on input line 116.
 Package epstopdf Info: Output file is already uptodate.
 
-<image/3D-eps-converted-to.pdf, id=254, 1204.5pt x 670.505pt>
+<image/3D-eps-converted-to.pdf, id=251, 1204.5pt x 670.505pt>
 File: image/3D-eps-converted-to.pdf Graphic file (type pdf)
 
 <use image/3D-eps-converted-to.pdf>
@@ -760,7 +763,7 @@ d-to.pdf image/virtual.eps>
 (epstopdf)             \includegraphics on input line 137.
 Package epstopdf Info: Output file is already uptodate.
 
-<image/virtual-eps-converted-to.pdf, id=255, 1028.84375pt x 520.94624pt>
+<image/virtual-eps-converted-to.pdf, id=252, 1028.84375pt x 520.94624pt>
 File: image/virtual-eps-converted-to.pdf Graphic file (type pdf)
 
 <use image/virtual-eps-converted-to.pdf>
@@ -799,10 +802,10 @@ pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/20
 16/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2016/texmf-dist/fon
 ts/type1/urw/times/utmr8a.pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on Main.pdf (9 pages, 2093705 bytes).
+Output written on Main.pdf (9 pages, 2084032 bytes).
 PDF statistics:
- 351 PDF objects out of 1000 (max. 8388607)
- 185 compressed objects within 2 object streams
+ 348 PDF objects out of 1000 (max. 8388607)
+ 186 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
