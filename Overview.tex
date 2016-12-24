@@ -30,14 +30,14 @@
  Briefly, the ThunderLoc system works as shown in Fig. \ref{architecture}. 
  In the client end, the location information and direction information of the smartphone can be estimated by GPS and the motion sensors (such as accelerometer, gyroscope) integrated in the smartphone, respectively.
  When a thunder occurs, each smartphone detects TDOA of two synchronized signals recorded by dual-microphone, then achieves the binary left/right data according to the sign of TDOA.
- The APP in each smartphone uploads the binary measurement data, the location information and direction information of the smartphone to the cloud computing platform together.
+ The APP in each smartphone uploads the 1-bit left/right binary code, the position and orientations information of the smartphone to the cloud computing platform together.
  During the data collection, participants can be even unaware of the collection task in which they are actually involved.
  Besides, ThunderLoc encourages participants to manually upload the sensing data to cloud computing platform when they hear the thunder.
  Thunder localization algorithm is run on the cloud computing platform to localize the dominant thunder.
 With these random distributed smartphones, the area can be divided into subregions, according to the positions and directions of the smartphone nodes.
-This naturally gives $N$-vector binary codes called the detection binary sequence in cloud computing platform,
+This naturally gives $N$-vector binary codes called the measured binary sequence in cloud computing platform,
 as shown in Fig. \ref{overview}, which embedded relative position relationships among the smartphone nodes and the thunder. 
-With the pre-computed subregion division, the location of the thunder can be estimated by processing the binary detection sequence.
+With the pre-computed subregion division, the location of the thunder can be estimated by processing the measured binary sequence.
    \vspace{-4mm}
   \begin{figure}[htb]
             \setlength{\abovecaptionskip}{0pt}

@@ -24,11 +24,8 @@ In this paper, we focus on the location of the loud clap, or crack of thunder.
 
 In the last decade, electromagnetic radiation-based lightning location systems need the expensive special device~\cite{vahabi2015modeling}.
 In recent years, the centralized microphone array-based solution to thunder localization exploited multiple synchronized microphones to simultaneously acquire acoustic signals, 
-which have some limitations with regard to the distances between the microphones, and sensing range for the large-scale applications. 
-%~\cite{arechiga2011acoustic}.
-With the recent advances in mobile computing and communication technology, most mobile devices (e.g. smart phones, tablets and laptops) are equipped with one/multiple microphones onboard.
+which have some limitations with regard to the distances between the microphones, and sensing range for the large-scale applications. %~\cite{arechiga2011acoustic}.
 Wireless acoustic sensor networks (WASNs) can overcome these limitations. 
-Thunder localization in WASN is becoming feasible due to recent advances in personal portable computing devices with the rapid deployment ability.
 A WASN consists of a set of wireless microphone nodes that are spatially distributed over the environment, usually in an ad-hoc fashion.
 Due to the wireless communication, the array-size limitations disappear and WASN can cover much larger areas.
 Acoustic source localization in sensor networks has been widely studied in the recent decade.
@@ -37,6 +34,8 @@ In the past few years, there has been a growing interest for acoustic nodes made
 Aarabi \emph{et al.} used 10 dual-microphone arrays distributed in a room and used their data to locate three speakers~\cite{aarabi1900fusion}.
 Wu \emph{et al.} used three dual-microphone arrays to locate two sound sources in which only the local DOA estimates are communicated among arrays~\cite{wu2012fusion}. 
 Most of the systems need to design the special hardware to capture the multiple channel synchronized audio signal. 
+With the recent advances in mobile computing and communication technology, most mobile devices (e.g. smart phones, tablets and laptops) are equipped with dual-microphone onboard.
+Thunder localization in WASN with dual-microphone nodes is becoming feasible due to recent advances in personal portable computing devices with the rapid deployment ability.
 
 
 % The demand for thunder localization comes not only from the scientific community, but also from public and private groups. 
@@ -49,7 +48,7 @@ Most of the systems need to design the special hardware to capture the multiple 
 % The North Alabama Lightning Mapping Array (NALMA) is a three dimensional very high frequency detection network of 11 VHF receivers. 
 
 
-In this paper, we propose a new method for thunder localization by leveraging dual-microphone smartphones.
+In this paper, we propose a crowdsensing mechanism for thunder localization by leveraging dual-microphone smartphones.
 With commodity dual-microphone smartphones, the binary left/right data from dual-microphone of each smartphone is effectively
 collected and utilized to estimate the location of the thunder.
 The proposed system solely relies on the collaborative effort of the participating users to achieve thunder localization.
@@ -57,9 +56,9 @@ The ThunderLoc project created such a prototype system with different types of A
 ThunderLoc takes advantage of the sensing capabilities, including the acoustics, position and orientation offered by the microphone, GPS, accelerometer and magnetometer on the smartphones.
 The key idea of ThunderLoc is the division of a 2D localization space into distinct regions by the perpendicular bisectors of lines joining dual-microphone in each smartphone. 
 Each distinct region formed in this manner can be uniquely identified by a binary sequence.
-ThunderLoc constructs the binary sequence table that maps all these feasible binary sequences to the corresponding regions by using the locations and directions information of the smartphone nodes.
-The smartphone nodes determine the measured binary sequence based on the sign of TDOA between two microphones of each smartphone node.
-The location of an acoustic source is estimated by searching through the binary sequence table to determine the ¡°nearest¡± feasible sequence to the measured sequence. 
+ThunderLoc constructs the binary sequence table that maps all these feasible binary sequences to the corresponding regions by using the positions and orientations of the smartphone nodes.
+The smartphone nodes determine the measured binary sequence based on the sign of TDOA between dual-channel acoustic signals of each smartphone node.
+The location of the thunder is estimated by searching through the binary sequence table to determine the nearest feasible sequence to the measured sequence. 
 %To our knowledge, thunder localization with smartphone-based crowdsensing has not been considered in the literature before.
 Our contributions are as follows:
 
