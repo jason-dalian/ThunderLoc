@@ -1,0 +1,78 @@
+\documentclass[journal]{IEEEtran}
+%\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage[cmex10]{amsmath}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{epsfig}
+\usepackage{algorithmic}
+\usepackage[linesnumbered,ruled,slide]{algorithm2e}
+\usepackage{amsfonts}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{verbatim}
+\usepackage{caption3}
+\usepackage[justification=centering]{caption}
+\usepackage{epstopdf}
+\usepackage{url}
+\usepackage{array,subfig}
+
+\begin{document}
+\pagestyle{empty}
+\thispagestyle{empty}
+
+\title{ThunderLoc: Smartphone-based Crowdsensing for Thunder Localization\vspace{-1mm}}
+
+%\author{\IEEEauthorblockN{Naigao Jin, Lei Wang£¬Xingwen Zhang, Wei Liu, Qing Tan }\\
+%\IEEEauthorblockA{School of Software, Dalian University of Technology, China\\
+%Key Laboratory for Ubiquitous Network and Service Software of Liaoning Province\\
+%ngjin@dlut.edu.cn}
+%\thanks{Naigao Jin is the corresponding author.}
+%\vspace{-2mm}}
+
+% make the title area
+\maketitle
+
+%\thispagestyle{plain}
+%\pagestyle{plain}
+\pagestyle{empty}
+\thispagestyle{empty}
+
+
+\begin{abstract}
+%\boldmath
+% At any given time, more than 2,000 thunderstorms are estimated to be active around the globe.
+Thunder localization provides an important solution to lightning location systems.
+To overcome limitations in existing centralized microphone array-based solutions, this paper formally describes, designs, implements, and evaluates a smartphone-based  thunder  localization system, called ThunderLoc.  %%called 
+In this study, we investigate dual-microphone integrated in modern smartphone and leverage the sign of Time Differences of Arrival (TDOA) as measurement information.
+The key idea behind ThunderLoc is to turn the localization problem into search problem in Hamming space by collecting the dual-microphone data of smartphones via a crowdsensing mechanism. 
+TDOA of thunders pertaining to the same smartphone is estimated through the simple generalized cross-correlation method. 
+After the quantization with 1-bit for the TDOA measurement from the smartphone nodes, thunder localization is performed
+by minimizing the Hamming distance between the measured binary sequence and the binary vectors in a database.
+The proposed ThunderLoc system is evaluated through extensive simulations and physical experiments (a test-bed with 30 smartphone nodes). 
+Evaluation results demonstrate that ThunderLoc can effectively localize the virtual thunders with good robustness.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Thunder Localization, Smartphone Crowedsensing, Hamming Distance
+\end{IEEEkeywords}
+% Crowdsourcing refers to a distributed problem-solving model in which a crowd of undefined size is engaged to solve a complex problem.
+% crowdsensing: individuals with sensing and computing devices (smartphones) collectively share data and extract information to measure and map phenomena of common interest.
+% Crowdsensing/crowdsourcing is a novel data collection paradigm that leverages this vast mobile sensor network, making it possible to expand the scope of research endeavors and address civic issues without requiring the purchase of specialized sensors or the installation and maintenance of network infrastructure. Data collected using such applications may come from unexpected yet interesting and valuable sources and may allow for collecting data in previously inaccessible locations and contexts.
+\IEEEpeerreviewmaketitle
+
+\input{Introduction}
+\input{Overview}
+\input{Design}
+\input{Discussion}
+\input{Result}
+\input{Relatedwork}
+\input{Conclusion}
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{Main}
+
+\end{document}

@@ -1,0 +1,89 @@
+
+\section{Introduction}
+
+%\cite{guo2011localising}
+%\cite{sallai2011acoustic}
+%\cite{allen2008voxnet}
+
+%Thunder is the sound made by lightning.  Thunder is seldom heard at distances over 20 km. Thunder can be treated as a weighted superposition of different channels¡¯ acoustic signatures.
+%The distance of the lightning can be calculated by the listener depending on how long the sound is heard since the vision of the lightning strikes.
+%The sudden increase in pressure and temperature from lightning produces rapid expansion of the air surrounding and within a bolt of lightning.
+
+
+
+Lightning in the sky is a direct threat to air and ground-based operations, and it is also a reflection of other destructive forces associated with thunderstorms. 
+Thunder is the acoustic shock wave resulting from a sudden and intense heating of the air in the lightning channel~\cite{few1995acoustic}.
+Thunder localization system has a variety of applications, such as lightning channel reconstruction, risk analysis of faults in power systems, 
+and electromagnetic interference studies~\cite{cummins2009overview}. 
+Lightning location systems (LLS) represent a promising source of experimental data to be used for the development of standards related to the protection of power systems against lightning.
+Cloud-to-ground lightning is the single largest cause of transients, faults, and outages in electric power transmission and distribution systems in lightning-prone areas. 
+Additionally, lightning is a major cause of electromagnetic interference that can affect all electronic systems. 
+Depending on the nature of the lightning and distance of the listener, thunder can range from a sharp, loud crack to a long, low rumble~\cite{dayeh2015first}.
+In this paper, we focus on the location of the loud clap, or crack of thunder. 
+
+
+In the last decade, electromagnetic radiation-based lightning location systems need the expensive special device~\cite{vahabi2015modeling}.
+In recent years, the centralized microphone array-based solution to thunder localization exploited multiple synchronized microphones to simultaneously acquire acoustic signals, 
+which have some limitations with regard to the distances between the microphones, and sensing range for the large-scale applications. 
+%~\cite{arechiga2011acoustic}.
+With the recent advances in mobile computing and communication technology, most mobile devices (e.g. smart phones, tablets and laptops) are equipped with one/multiple microphones onboard.
+Wireless acoustic sensor networks (WASNs) can overcome these limitations. 
+Thunder localization in WASN is becoming feasible due to recent advances in personal portable computing devices with the rapid deployment ability.
+A WASN consists of a set of wireless microphone nodes that are spatially distributed over the environment, usually in an ad-hoc fashion.
+Due to the wireless communication, the array-size limitations disappear and WASN can cover much larger areas.
+Acoustic source localization in sensor networks has been widely studied in the recent decade.
+Generally, each node just has a single microphone element in previous distributed acoustic source localization system.
+In the past few years, there has been a growing interest for acoustic nodes made of two or more synchronized microphones.
+Aarabi \emph{et al.} used 10 dual-microphone arrays distributed in a room and used their data to locate three speakers~\cite{aarabi1900fusion}.
+Wu \emph{et al.} used three dual-microphone arrays to locate two sound sources in which only the local DOA estimates are communicated among arrays~\cite{wu2012fusion}. 
+Most of the systems need to design the special hardware to capture the multiple channel synchronized audio signal. 
+
+
+% The demand for thunder localization comes not only from the scientific community, but also from public and private groups. 
+% WWLLN currently have over 70 sensors around the globe to detect the lightning. 
+% WWLLN detects very low frequency (VLF) radio waves (3-30 kHz) emitted by a lightning strike, then the central processors calculate lightning locations using the continuous flow of wave from WWLLN sensors. 
+% Earth Networks Inc. offers a service called Earth Networks Total Lightning Network (ENTLN) that provides in-cloud and cloud-to-ground lightning detection. 
+% It uses time-of-arrival detection methodology with GPS technology to accurately locate lightning. 
+% It includes more than 1,200 sensors in more than 40 countries around the world. 
+% Lightning mapping array (LMA) is a network of time-of-arrival sensors that passively receives very high frequency (VHF) impulses from electrical breakdown within thunderstorms. 
+% The North Alabama Lightning Mapping Array (NALMA) is a three dimensional very high frequency detection network of 11 VHF receivers. 
+
+
+In this paper, we propose a new method for thunder localization by leveraging dual-microphone smartphones.
+With commodity dual-microphone smartphones, the binary left/right data from dual-microphone of each smartphone is effectively
+collected and utilized to estimate the location of the thunder.
+The proposed system solely relies on the collaborative effort of the participating users to achieve thunder localization.
+The ThunderLoc project created such a prototype system with different types of Android based mobile phones, and validated our approach with a virtual thunder study, showcasing the potential of the proposed solution. 
+ThunderLoc takes advantage of the sensing capabilities, including the acoustics, position and orientation offered by the microphone, GPS, accelerometer and magnetometer on the smartphones.
+The key idea of ThunderLoc is the division of a 2D localization space into distinct regions by the perpendicular bisectors of lines joining dual-microphone in each smartphone. 
+Each distinct region formed in this manner can be uniquely identified by a binary sequence.
+ThunderLoc constructs the binary sequence table that maps all these feasible binary sequences to the corresponding regions by using the locations and directions information of the smartphone nodes.
+The smartphone nodes determine the measured binary sequence based on the sign of TDOA between two microphones of each smartphone node.
+The location of an acoustic source is estimated by searching through the binary sequence table to determine the ¡°nearest¡± feasible sequence to the measured sequence. 
+%To our knowledge, thunder localization with smartphone-based crowdsensing has not been considered in the literature before.
+Our contributions are as follows:
+
+\begin{itemize}
+\item{We designed, implemented, deployed and  evaluted a crowdsensing-based
+thunder localization system called ThunderLoc. Our ThunderLoc app for Android platform has
+been downloaded by more than 1,000 users in our university to monitor the thunder near our campus. 
+To the best of our knowledge, ThunderLoc is the first crowdsensing-based thunder localization service;}
+\item{High-accuracy time synchronization among smartphones is not required. ThunderLoc rely on measuring the sign of TDOA between two synchronized microphones of each smartphone, 
+and the requirement of time synchronization is reduced;}
+\item{Error-tolerant localization scheme. The binary left/right data and novel localization method make the localization system more robust to the location error, direction error and  measurement error of smartphone nodes;}
+\item{ Low communication overhead and computational complexity. 1-bit measurement information is passed by each smartphone in the sensor network, and the simple cross correlation algorithm is good enough to estimate the binary left/right data.}
+\end{itemize}
+
+
+The rest of the article is organized as follows. Section \uppercase\expandafter{\romannumeral 2} presents an overview of the ThunderLoc system.
+Then, the design of ThunderLoc is introduced in section \uppercase\expandafter{\romannumeral 3}.
+Section \uppercase\expandafter{\romannumeral 4} discusses several issues concerning practical system deployment.
+Section \uppercase\expandafter{\romannumeral 5} presents simulation results and an empirical evaluation on
+the test-bed. Section \uppercase\expandafter{\romannumeral 6} briefly surveys related work.
+Section \uppercase\expandafter{\romannumeral 7} concludes the whole article.
+
+
+
+
+
+
